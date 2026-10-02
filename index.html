@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Vinitha Partthasaratthy">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GƏL BAHAR — Eau de Parfum for Lecheq Farm &amp; Distillery</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#0D0B0A;
+  --panel:#161310;
+  --ice:#E6F0F7;
+  --glacier:#9CC3DB;
+  --samani:#3FCB5C;
+  --crimson:#8E0B25;
+  --rose:#E0485F;
+  --honey:#D8A24A;
+  --amber:#F0A92E;
+  --copper:#B26B35;
+  --mute:rgba(230,240,247,.68)
+}
+html{scroll-behavior:smooth;scroll-padding-top:3.5rem}
+body{margin:0;background:var(--char);color:var(--ice);font-family:'Inter',sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}
+body>*{position:relative;z-index:1}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.sec{padding:6.5rem 1.5rem}.wrap{max-width:1120px;margin:0 auto}
+.honey{color:var(--honey)}.mute{color:var(--mute)}
+.orn{position:relative;height:1px;background:linear-gradient(90deg,transparent,var(--honey),transparent)}
+.orn::after{content:"\2740";position:absolute;left:50%;top:-11px;color:var(--honey);background:#0D0B0A;border-radius:50%;padding:0 10px;transform:translateX(-50%);font-size:1.1rem;line-height:1.3}
+h2.h{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.02;margin:0;color:#fff;letter-spacing:.02em}
+.cap{font-size:.72rem;letter-spacing:.2em;color:var(--honey)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 1.5rem;background:rgba(13,11,10,.8);backdrop-filter:blur(10px);border-bottom:1px solid rgba(216,162,74,.25)}
+nav a{color:var(--ice);text-decoration:none;font-size:.78rem;letter-spacing:.08em;opacity:.75;transition:all .3s}nav a:hover{opacity:1;color:var(--honey)}
+nav .l{display:flex;gap:1.4rem;overflow-x:auto;white-space:nowrap}
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden;padding:6rem 1.5rem 8rem;background:radial-gradient(ellipse at 20% 15%,rgba(156,195,219,.15),transparent 55%),radial-gradient(ellipse at 85% 95%,rgba(240,169,46,.12),transparent 55%),radial-gradient(ellipse at 55% 60%,rgba(63,203,92,.06),transparent 50%)}
+.t{font-family:'Cormorant Garamond',serif;font-weight:300;letter-spacing:.14em;line-height:.9;font-size:clamp(3.6rem,15vw,11rem);margin:0;background:linear-gradient(180deg,#fff,var(--honey));-webkit-background-clip:text;background-clip:text;color:transparent}
+.mb{display:grid;grid-template-columns:1fr;gap:1rem;align-items:stretch}
+@media(min-width:640px){.mb{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.mb{grid-template-columns:repeat(3,1fr)}.s2{grid-column:span 2}.s3{grid-column:1/-1}}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid rgba(216,162,74,.15);border-top:3px solid var(--a,var(--honey))}
+.txt{padding:1.8rem}
+.txt h4{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.7rem;line-height:1.1;margin:0 0 .45rem;color:var(--a,var(--honey))}
+.txt p{font-size:.84rem;line-height:1.65;margin:0;color:var(--mute)}
+.txt em{display:block;margin-top:.7rem;font-family:'Cormorant Garamond',serif;font-size:1.05rem;line-height:1.35;color:#fff}
+.pyr{display:grid;gap:2.5rem;align-items:center}
+@media(min-width:800px){.pyr{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}}
+.tier{cursor:pointer;padding:1.2rem;border-left:3px solid transparent;background:rgba(20,16,13,0.3);margin-bottom:0.75rem;transition:all 0.3s ease}
+.tier:hover{background:rgba(216,162,74,0.05)}
+.tier:focus-visible{outline:2px solid var(--honey);outline-offset:2px}
+.tier.on[data-k=top]{border-color:var(--glacier);background:rgba(156,195,219,0.08)}
+.tier.on[data-k="mid"]{border-color:var(--rose);background:rgba(224,72,95,0.08)}
+.tier.on[data-k="base"]{border-color:var(--amber);background:rgba(240,169,46,0.08)}
+.tier h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.8rem;margin:0;line-height:1.05;color:#fff}
+.tier p{font-size:.82rem;line-height:1.6;margin:.4rem 0 0;color:var(--mute)}
+.panel{background:var(--panel);border:1px solid rgba(216,162,74,.3);padding:2.2rem;min-height:18rem;transition:all .5s}
+.panel h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:2.4rem;margin:0;line-height:1.05;color:#fff}
+.panel .n{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.15rem;margin:.6rem 0 1rem}
+.panel p{font-size:.88rem;line-height:1.8;margin:0;color:var(--mute)}
+.scroll{max-height:60vh;overflow:auto;border-top:1px solid var(--honey);border-bottom:1px solid var(--honey);background:rgba(13,11,10,.78)}
+.tbl{width:100%;border-collapse:collapse;font-size:.82rem;font-variant-numeric:tabular-nums}
+.tbl th{position:sticky;top:0;z-index:2;background:var(--panel);color:var(--honey);font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.05rem;letter-spacing:.06em;padding:.75rem;text-align:right;border-bottom:1px solid rgba(216,162,74,.5)}
+.tbl td{padding:.42rem .75rem;text-align:right;border-bottom:1px solid rgba(230,240,247,.07)}
+.tbl td:first-child{background:var(--panel);text-align:left}
+.tbl th:first-child{text-align:left}
+.tbl td:nth-child(n+3){color:var(--mute)}
+.tbl tr:hover td{background:rgba(216,162,74,.08)}
+.tbl tr.k td{background:#4A0614;color:#fff;font-weight:500;border-bottom:1px solid rgba(224,72,95,0.3)}
+.tbl tr.k td:first-child::after{content:" (Lecheq Caucasus Centerpiece)";margin-left:.4rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.9rem;color:#E0485F;text-shadow:0 0 10px rgba(224,72,95,.5)}
+.tbl tfoot td{position:sticky;bottom:0;background:var(--panel);color:var(--honey);font-weight:600;border-top:1px solid var(--honey);z-index:2}
+.facts{display:grid;margin-top:2.5rem}@media(min-width:768px){.facts{grid-template-columns:repeat(4,1fr);gap:1.5rem}}
+.facts div{padding:1.2rem 0;border-top:1px solid rgba(216,162,74,.3)}
+.facts .n{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:2.2rem;letter-spacing:-.02em;color:var(--rose);margin:0}
+.facts p{font-size:.82rem;line-height:1.65;margin:.4rem 0 0;opacity:.8}
+.story p{margin:0 0 1.7rem;line-height:1.85}
+.in2{animation:fd .7s ease}@keyframes fd{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+#fx{position:fixed!important;inset:0;z-index:0!important;pointer-events:none}
+#hero{position:relative;background:radial-gradient(ellipse at 15% 12%,rgba(156,195,219,.42),transparent 55%),radial-gradient(ellipse at 88% 10%,rgba(190,20,60,.5),transparent 52%),radial-gradient(ellipse at 50% 108%,rgba(240,169,46,.6),transparent 60%),radial-gradient(ellipse at 8% 85%,rgba(63,203,92,.28),transparent 50%)}
+#hero>*{position:relative;z-index:1}
+#hero::after{content:"";position:absolute;left:50%;bottom:-14vh;width:90vw;height:46vh;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(255,170,50,.7),rgba(224,100,30,.3) 40%,transparent 70%);animation:pulse 3.6s ease-in-out infinite;pointer-events:none;z-index:0}
+@keyframes pulse{0%,100%{opacity:.65;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.12)}}
+#hero>#grass{position:absolute;left:0;right:0;bottom:0;height:20vh;display:flex;align-items:flex-end;justify-content:space-between;padding:0 2%;pointer-events:none;z-index:1}
+#grass i{display:block;width:3px;border-radius:3px 3px 0 0;background:linear-gradient(0deg,#17602b,var(--samani) 70%,#c8f59a);transform-origin:bottom;transform:scaleY(0);animation:g 3.6s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes g{to{transform:scaleY(1)}}
+.t{background:linear-gradient(100deg,#fff 0%,var(--ice) 22%,var(--glacier) 36%,var(--samani) 48%,var(--honey) 64%,var(--amber) 80%,#fff 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:thaw 8s ease-in-out infinite alternate;filter:drop-shadow(0 0 28px rgba(240,169,46,.35))}
+@keyframes thaw{to{background-position:100% 0}}
+.greet{display:inline-block;font-size:.8rem;letter-spacing:.32em;color:#fff;padding:.55rem 1.4rem;border:1px solid var(--amber);background:linear-gradient(90deg,rgba(142,11,37,.55),rgba(240,169,46,.3),rgba(142,11,37,.55));box-shadow:0 0 26px rgba(240,169,46,.45);margin-bottom:1.6rem;animation:glow 2.8s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 46px rgba(240,169,46,.8)}}
+.card{background:linear-gradient(180deg,var(--g,#2A2118),#161310 78%);border-radius:4px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .4s,box-shadow .4s}
+.card:hover{transform:translateY(-7px);box-shadow:0 18px 44px -12px var(--a,#D8A24A)}
+.tier{background:rgba(20,16,13,.55)}
+.orn{background:linear-gradient(90deg,transparent,var(--amber),var(--rose),var(--amber),transparent)}
+#hero{background:radial-gradient(ellipse 55% 45% at 10% 10%,rgba(156,195,219,.4),transparent 70%),radial-gradient(ellipse 55% 45% at 92% 12%,rgba(190,20,60,.75),transparent 70%),radial-gradient(ellipse 70% 45% at 50% 108%,rgba(240,169,46,.7),transparent 70%),radial-gradient(ellipse 45% 40% at 6% 88%,rgba(63,203,92,.4),transparent 70%);background-size:140% 140%;animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{from{background-position:0 0}to{background-position:100% 100%}}
+#manifesto{background:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(63,203,92,.4),transparent 70%),radial-gradient(ellipse 60% 60% at 100% 100%,rgba(190,20,60,.65),transparent 70%),radial-gradient(ellipse 50% 40% at 50% 100%,rgba(240,169,46,.2),transparent 70%)!important}
+#field{background:radial-gradient(ellipse 60% 70% at 12% 50%,rgba(190,20,60,.5),transparent 70%),radial-gradient(ellipse 60% 70% at 92% 50%,rgba(240,169,46,.45),transparent 70%)}
+#mood{background:radial-gradient(ellipse 60% 45% at 100% 0%,rgba(240,169,46,.5),transparent 70%),radial-gradient(ellipse 60% 50% at 0% 60%,rgba(190,20,60,.55),transparent 70%),radial-gradient(ellipse 50% 40% at 100% 100%,rgba(156,195,219,.22),transparent 70%),radial-gradient(ellipse 45% 40% at 20% 100%,rgba(63,203,92,.26),transparent 70%)!important}
+#pyramid{background:radial-gradient(ellipse 60% 40% at 50% 0%,rgba(156,195,219,.36),transparent 70%),radial-gradient(ellipse 50% 50% at 8% 55%,rgba(190,20,60,.58),transparent 70%),radial-gradient(ellipse 60% 45% at 95% 100%,rgba(240,169,46,.52),transparent 70%)!important}
+#formula{background:radial-gradient(ellipse 60% 50% at 100% 0%,rgba(190,20,60,.65),transparent 70%),radial-gradient(ellipse 50% 50% at 0% 100%,rgba(240,169,46,.34),transparent 70%),radial-gradient(ellipse 40% 40% at 40% 40%,rgba(63,203,92,.1),transparent 70%)!important}
+#story{background:linear-gradient(180deg,rgba(156,195,219,.2) 0%,transparent 28%,rgba(190,20,60,.5) 62%,rgba(240,130,40,.65) 100%)!important}
+.buta{height:46px;background-color:rgba(142,11,37,.65);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='46' height='46'%3E%3Cpath d='M10 36C3 18 20 5 33 15c6 5 1 14-9 12 6 5-2 14-14 9z' fill='%23D8A24A' fill-opacity='.9'/%3E%3C/svg%3E");background-repeat:repeat-x;background-position:center;border-top:1px solid rgba(216,162,74,.55);border-bottom:1px solid rgba(216,162,74,.55)}
+.four{display:flex;gap:1.4rem;margin-top:1.6rem;flex-wrap:wrap;justify-content:center}
+.four span{display:flex;align-items:center;gap:.55rem;font-size:.72rem;letter-spacing:.2em;color:var(--mute)}
+.four i{width:10px;height:10px;border-radius:50%;background:var(--c);box-shadow:0 0 14px var(--c);animation:pl 2.4s ease-in-out infinite alternate}
+.four span:nth-child(2) i{animation-delay:.5s}.four span:nth-child(3) i{animation-delay:1s}.four span:nth-child(4) i{animation-delay:1.5s}
+@keyframes pl{from{opacity:.4;transform:scale(.8)}to{opacity:1;transform:scale(1.35)}}
+.still{margin-top:1.5rem;filter:drop-shadow(0 0 10px rgba(178,107,53,.7))}
+.steps{display:grid;gap:1rem}@media(min-width:768px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{padding:1.5rem 1.3rem 1.6rem;border-top:3px solid var(--c);background:linear-gradient(180deg,var(--g,#2A2118),#161310 80%);transition:transform .4s,box-shadow .4s}
+.step:hover{transform:translateY(-6px);box-shadow:0 16px 40px -12px var(--c)}
+.step .no{font-weight:200;font-size:2.4rem;color:var(--c);line-height:1}
+.step h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:500;color:#fff;margin:.3rem 0 .5rem}
+.step p{font-size:.84rem;line-height:1.65;color:var(--mute);margin:0}
+nav{-webkit-backdrop-filter:blur(10px)}
+#fx{top:0;left:0;width:100%;height:100%}
+#hero{min-height:100svh}
+.card .txt{flex-grow:1}
+.img-holder{position:relative;height:14rem;overflow:hidden;background:#26211C}
+.img-holder img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .3s ease}
+.card:hover .img-holder img{opacity:.8}
+.drop-grid{display:flex;gap:.5rem;margin-top:1.2rem}
+.drop{display:block;width:1.3rem;height:1.3rem;border-radius:50% 50% 50% 0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);border:1px solid rgba(255,255,255,.25)}
+.mb .card:nth-child(1){--g:#9CC3DB33}.mb .card:nth-child(2){--g:#E0485F33}.mb .card:nth-child(3){--g:#B26B3533}.mb .card:nth-child(4){--g:#D8A24A33}.mb .card:nth-child(5){--g:#3FCB5C33}.mb .card:nth-child(6){--g:#E0485F33}.mb .card:nth-child(7){--g:#D8A24A33}
+.mb .card:nth-child(1) .img-holder{background:repeating-radial-gradient(circle at 50% 130%,rgba(230,240,247,.25) 0,rgba(230,240,247,.25) 2px,transparent 2px,transparent 24px),linear-gradient(160deg,#1B2A36,#6F93AA)}
+.mb .card:nth-child(2) .img-holder{background:radial-gradient(circle at 50% 50%,#F6B4C0 0,#E0485F 22%,#8E0B25 55%,#3A0511 100%)}
+.mb .card:nth-child(3) .img-holder{background:radial-gradient(ellipse at 50% 100%,#FFD47A 0,#F0A92E 22%,#B26B35 45%,#1A0C05 85%)}
+.mb .card:nth-child(4) .img-holder{background:radial-gradient(circle at 50% 50%,#8E0B25 0,#8E0B25 8%,transparent 9%),repeating-radial-gradient(circle at 50% 50%,rgba(26,18,8,.45) 0,rgba(26,18,8,.45) 2px,transparent 2px,transparent 18px),linear-gradient(135deg,#F2D07A,#D8A24A 55%,#B26B35)}
+.mb .card:nth-child(5) .img-holder{background:repeating-linear-gradient(90deg,rgba(214,247,176,.5) 0,rgba(214,247,176,.5) 2px,transparent 2px,transparent 9px),linear-gradient(180deg,#0E3A1B,#2A8F45)}
+.mb .card:nth-child(6) .img-holder{background:repeating-linear-gradient(115deg,#8E0B25 0,#8E0B25 16px,#D8A24A 16px,#D8A24A 18px,#8E0B25 18px,#8E0B25 34px)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}#grass i{transform:scaleY(1)}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+
+<nav>
+  <a href="#hero" class="serif" style="font-size:1.1rem;letter-spacing:.2em;color:var(--honey);font-weight:400">GƏL BAHAR</a>
+  <div class="l">
+    <a href="#manifesto">Manifesto</a>
+    <a href="#field">Field to Flask</a>
+    <a href="#mood">Moodboard</a>
+    <a href="#pyramid">Architecture</a>
+    <a href="#formula">Master Accord</a>
+    <a href="#story">Narrative</a>
+  </div>
+</nav>
+
+<header id="hero">
+  <p class="greet">NOVRUZ BAYRAMINIZ MÜBARƏK</p>
+  <p class="serif italic" style="color:var(--glacier);font-size:clamp(1.1rem,2.4vw,1.6rem)">Novruz · the vernal equinox, in scent</p>
+  <h1 class="t my-8">GƏL<br>BAHAR</h1>
+  <div class="orn" style="width:min(18rem,60vw)"></div>
+  <p class="serif mt-6 text-white" style="font-size:clamp(1.3rem,3vw,2rem)">Come, O Spring</p>
+  <p class="cap mt-8">EAU DE PARFUM · 20% · CAUCASUS LECHEQ ROSE OIL</p>
+  <div class="four"><span style="--c:#9CC3DB"><i></i>SU · WATER</span><span style="--c:#F0A92E"><i></i>OD · FIRE</span><span style="--c:#E6F0F7"><i></i>YEL · WIND</span><span style="--c:#B26B35"><i></i>TORPAQ · EARTH</span></div>
+  <svg class="still" width="46" height="46" viewBox="0 0 46 46" fill="none" stroke="#D08A4A" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><ellipse cx="16" cy="32" rx="12" ry="9"/><path d="M10 24c0-8 3-10 6-14 3 4 6 6 6 14"/><circle cx="16" cy="8" r="2"/><path d="M18 8l22 6v10"/></svg>
+  <p class="text-xs mt-3 opacity-60">Composed for Lecheq Farm &amp; Distillery</p>
+  <p class="serif italic mt-3" style="color:var(--honey);font-size:1.25rem;letter-spacing:.06em">by Vinitha Partthasaratthy</p>
+  <p class="text-xs mt-2 mute">Tap anywhere to light a spark</p>
+  <div id="grass"></div>
+</header>
+<div class="buta"></div>
+
+<section id="manifesto" class="sec" style="background:radial-gradient(ellipse at 8% 0%,rgba(63,203,92,.26),transparent 50%),radial-gradient(ellipse at 95% 85%,rgba(190,20,60,.42),transparent 55%),radial-gradient(ellipse at 50% 100%,rgba(240,169,46,.14),transparent 50%)">
+  <div class="wrap">
+    <h2 class="h">A promise made in the cold,<br>kept by the first green.</h2>
+    <div class="grid md:grid-cols-12 gap-10 mt-12">
+      <div class="md:col-span-7 serif text-gray-200" style="font-size:clamp(1.25rem,2.2vw,1.65rem);line-height:1.7">
+        <p class="mb-6">The most honest perfumes are rarely literal. Novruz in Azerbaijan is not an inventory of sweets and spices. It is a feeling in the body: the loosening of the shoulders when the ice breaks, the relief of a house with its doors open.</p>
+        <p>GƏL BAHAR translates that feeling through olfactory illusion. It does not depict a dessert or a cut field of wheat. It offers cold green air, a rose at the moment of waking, wax warmed by a candle, and a fire sinking into resin. The nose supplies the rest, because the nose already knows.</p>
+      </div>
+      <div class="md:col-span-5" style="font-size:.88rem;line-height:1.8;opacity:.85">
+        <p class="cap">THE BRIEF, ANSWERED</p>
+        <p class="mt-3 text-gray-300">Lecheq Rose Oil is the emotional centre of the composition. Rose bases give it volume; the oil gives it truth. Everything else frames it. By pinning an intentional brake pad on the synthetics (lowering Hedione to 4.0% and Timbersilk to 7.0%), the traditionally thin middle gap is completely resolved. Supported by 2.0% Benzoin Siam, the formulation sits dense, deep, and beautifully substantive on the skin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="field" class="sec">
+  <div class="wrap">
+    <p class="cap">FIELD TO FLASK</p>
+    <h2 class="h mt-2 mb-10">From the Caucasus foothills to the bottle</h2>
+    <div class="steps">
+      <div class="step" style="--c:#E0485F;--g:#E0485F3D"><span class="no">01</span><h3>Bloom</h3><p>Lecheq roses are gathered at peak morning bloom in the pristine foothills of the Caucasus.</p></div>
+      <div class="step" style="--c:#B26B35;--g:#B26B353D"><span class="no">02</span><h3>Distillation</h3><p>The petals are distilled into essential oil at Lecheq Distillery, a whole field concentrated into a few precious drops.</p></div>
+      <div class="step" style="--c:#D8A24A;--g:#D8A24A3D"><span class="no">03</span><h3>Grasse</h3><p>The Lecheq Rose Essential Oil travels to Grasse, where it is received for composition.</p></div>
+      <div class="step" style="--c:#3FCB5C;--g:#3FCB5C3D"><span class="no">04</span><h3>Flask</h3><p>GƏL BAHAR: a 20% Eau de Parfum with the Lecheq rose at its emotional heart.</p></div>
+    </div>
+  </div>
+</section>
+<div class="buta"></div>
+
+<section id="mood" class="sec" style="background:radial-gradient(ellipse at 90% 0%,rgba(240,169,46,.34),transparent 50%),radial-gradient(ellipse at 0% 60%,rgba(190,20,60,.36),transparent 52%),radial-gradient(ellipse at 100% 100%,rgba(156,195,219,.2),transparent 50%),radial-gradient(ellipse at 20% 100%,rgba(63,203,92,.18),transparent 45%)">
+  <div class="wrap">
+    <p class="cap">VISUAL LANDSCAPE</p>
+    <h2 class="h mt-2 mb-10">Chiaroscuro: Texture, Fire &amp; Ice</h2>
+    <div class="mb">
+      <div class="card" style="--a: var(--glacier)">
+        <div class="img-holder"><img src="img/mood-vernal.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="txt">
+          <h4>The Vernal Shock</h4>
+          <p>Young green wheat sprouts bursting through melting frost and glacial ice under sharp dawn light. Crisp, snapping, kinetic.</p>
+          <em>Key Notes: Cis-3-Hexenyl Acetate, Triplal, Yellow Mandarin</em>
+        </div>
+      </div>
+      <div class="card" style="--a: var(--rose)">
+        <div class="img-holder"><img src="img/mood-rose.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="txt">
+          <h4>The Caucasus Heart</h4>
+          <p>A magnificent bouquet of dark crimson Lecheq roses. Velvety, rich, and heavily texturized rather than airy or hollow.</p>
+          <em>Key Notes: Lecheq Rose Oil, Rose Givco 217, Wardia BM</em>
+        </div>
+      </div>
+      <div class="card" style="--a: var(--copper)">
+        <div class="img-holder"><img src="img/mood-embers.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="txt">
+          <h4>The Purifying Embers</h4>
+          <p>Bonfires at dusk, the leap over the flames, and sparks climbing into the dark. The fire sinks to a golden glow that stays warm long after the night has turned.</p>
+          <em>Key Notes: Whiskey Pentanol, CMP 147 Sweet Smoke, Labdanum Absolute, Benzoin Siam</em>
+        </div>
+      </div>
+      <div class="card" style="--a: var(--honey)">
+        <div class="img-holder"><img src="img/mood-xonca.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="txt">
+          <h4>The Xonça Table</h4>
+          <p>A tray laid for the guest: şəkərbura, paxlava and qoğal, dried apricot, and a candle burning at the centre. Warm wax, honey and saffron light.</p>
+          <em>Key Notes: Beeswax Absolute, Osmanthus Absolute, Safraleine, Cardamom</em>
+        </div>
+      </div>
+      <div class="card" style="--a: var(--samani)">
+        <div class="img-holder"><img src="img/mood-samani.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="txt">
+          <h4>The Samani Vow</h4>
+          <p>Wheat grown in a dish for weeks and tied with a red ribbon. The smallest green promise that the world will begin again.</p>
+          <em>Key Notes: Petit Grain Heart, Limonene, Orange Flower Absolute, Indole</em>
+        </div>
+      </div>
+      <div class="card" style="--a: var(--rose)">
+        <div class="img-holder"><img src="img/mood-silk.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="txt">
+          <h4>The Silk Thread</h4>
+          <p>Hand-printed kəlağayı silk in crimson and gold, its buta motifs alive in the wind. The softness and movement the rose should leave on skin.</p>
+          <em>Key Notes: Timbersilk, Ambrettolide, Ambroxan, Hedione</em>
+        </div>
+      </div>
+      <div class="card s3" style="--a: var(--honey)">
+        <div class="txt" style="padding:2.4rem 2rem;text-align:center">
+          <p class="serif italic text-white" style="font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3">&ldquo;Winter does not end. It is invited to leave.&rdquo;</p>
+          <em style="color:var(--honey)">The idea behind GƏL BAHAR</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="buta"></div>
+<section id="pyramid" class="sec" style="background:radial-gradient(ellipse at 50% 0%,rgba(156,195,219,.32),transparent 50%),radial-gradient(ellipse at 15% 52%,rgba(190,20,60,.42),transparent 52%),radial-gradient(ellipse at 90% 100%,rgba(240,169,46,.42),transparent 52%)">
+  <div class="wrap">
+    <p class="cap">OLFACTORY ARCHITECTURE</p>
+    <h2 class="h mt-2 mb-12">Fragrance Pyramid</h2>
+    <div class="pyr">
+      <div role="tablist" aria-label="Pyramid levels">
+        <div class="tier" data-k="top" role="tab" tabindex="0">
+          <h3>Top · The Equinox Ice</h3>
+          <p>Green, wet and bright, with a splinter of citrus sun.</p>
+        </div>
+        <div class="tier" data-k="mid" role="tab" tabindex="0">
+          <h3>Mid · The Grand Xonça</h3>
+          <p>Lecheq rose at the centre of a honeyed, saffron-lit tray.</p>
+        </div>
+        <div class="tier" data-k="base" role="tab" tabindex="0">
+          <h3>Base · The Embers of Çərşənbə</h3>
+          <p>Amber, resin and a thread of smoke, glowing low.</p>
+        </div>
+      </div>
+      <div class="panel" id="panel" role="tabpanel"><div id="pc"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="formula" class="sec" style="background:radial-gradient(ellipse at 95% 0%,rgba(190,20,60,.45),transparent 52%),radial-gradient(ellipse at 0% 100%,rgba(240,169,46,.24),transparent 50%),radial-gradient(ellipse at 40% 40%,rgba(63,203,92,.08),transparent 50%)">
+  <div class="wrap">
+    <p class="cap">TECHNICAL FORMULA</p>
+    <h2 class="h mt-2 mb-4">The Master Accord, in compounding order</h2>
+    <p class="mb-8 mute" style="font-size:.85rem;line-height:1.7;max-width:46rem">Materials marked with a percentage in brackets are supplied as dilutions; the quantity shown is the weight of the diluted material, and prices are per kilogram of the material as supplied. The Rose Damascena line is the Lecheq Rose Oil: a 1% dilution at 10% of the formula, supported by rose bases for volume.</p>
+    <div class="scroll">
+      <table class="tbl">
+        <thead><tr><th>Raw material</th><th>%</th><th>Qty (g)</th><th>€ / kg</th><th>Total €</th></tr></thead>
+        <tbody id="rows"></tbody>
+        <tfoot><tr><td>Total</td><td>100%</td><td>1000.0</td><td></td><td>96.53</td></tr></tfoot>
+      </table>
+    </div>
+    <div class="facts">
+      <div><p class="n">1,000.0 g</p><p>Batch size, compounded in the order shown.</p></div>
+      <div><p class="n">46</p><p>Raw materials in the master accord.</p></div>
+      <div><p class="n">IFRA Cat. 4</p><p>Formulated to comply with the latest IFRA Category 4 standards at 20% Eau de Parfum concentration.</p></div>
+      <div><p class="n">€96.53 / kg</p><p>Raw material cost, within the brief's budget ceiling of €100 per kilogram.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="buta"></div>
+<section id="story" class="sec" style="background:linear-gradient(180deg,rgba(156,195,219,.16) 0%,transparent 28%,rgba(190,20,60,.34) 62%,rgba(240,130,40,.5) 100%)">
+  <div class="wrap story" style="max-width:720px">
+    <p class="cap text-center">THE STORY</p>
+    <h2 class="h text-center mt-2 mb-10">From the Caspian wind to the last ember</h2>
+    <div class="orn mb-10"></div>
+    <div class="serif" style="font-size:clamp(1.25rem,2.3vw,1.6rem)">
+      <p>It begins in the cold. A wind comes off the Caspian, carrying salt and the last of winter, and Baku pulls its coat tight. On the branches the ice is silver and faintly green at once.</p>
+      <p>Then comes a single drop, and another. On the windowsill, wheat has been growing in a dish for weeks. In the foothills of the Caucasus, the Lecheq roses stir before dawn, and the first of them opens.</p>
+      <p style="color:var(--honey)">Doors are opened. A tray is laid with sweets, apricots, a candle. In this country a guest is a blessing, and nobody leaves a house empty-handed.</p>
+      <p style="color:var(--amber)">At dusk the fires are lit. Children leap across the flames and the old year goes up in sparks. When the fire sinks, the rose does not fade. It deepens, warm with amber and a thread of smoke, and stays on the skin like the memory of a good night.</p>
+      <p class="text-center mt-12 honey" style="font-size:2.6rem">Gəl, Bahar.</p>
+    </div>
+    <div class="orn mt-10 mb-6"></div>
+    <p class="text-center text-xs leading-relaxed mute">GƏL BAHAR, Eau de Parfum 20%<br><span class="serif italic" style="color:var(--honey);font-size:1.3rem;line-height:2">Created by Vinitha Partthasaratthy</span><br>Composed for Lecheq Farm &amp; Distillery · Samples for Lecheq, Dubai, at Beautyworld Middle East (October)</p>
+  </div>
+</section>
+
+<script>
+const D=[["TIMBERSILK","7%","70","41","2.87"],["PHENYL ETHYL ALCOHOL (PEA)","8%","80","4","0.32"],["WARDIA BM","8.2%","82","95","7.79"],["ROSE GIVCO 217","8%","80","205","16.4"],["DMBC BUTYRATE","5%","50","27","1.35"],["WHISKEY PENTANOL","3%","30","41","1.23"],["BERGAMOT EO","0.2%","2","100","0.2"],["ARMENIAN WOOD","3%","30","76","2.28"],["CMP 148 POWERFUL DEEP LOVE","1.5%","15","111","1.67"],["CMP 147 SWEET SMOKE","1.5%","15","113","1.70"],["ALDEHYDE C-14","1.5%","15","10","0.15"],["HEDIONE","4%","40","11","0.44"],["OSMANTHUS ABSOLUTE (10%)","1.5%","15","4000","6"],["ALDEHYDE C-16","0.8%","8","7","0.06"],["RASPBERRY KETONE","1.6%","16","18","0.29"],["BENZOIN SIAM RESINOID (10%)","2%","20","100","0.2"],["IONONE BETA","1.4%","14","44","0.62"],["ORANGE FLOWER ABSOLUTE (10%)","1.5%","15","3500","5.25"],["PETIT GRAIN HEART EO","1.5%","15","142","2.13"],["BEESWAX ABSOLUTE","1.2%","12","182","2.18"],["YELLOW MANDARIN EO","1.6%","16","50","0.8"],["SAFRALEINE (10%)","2.2%","22","1050","2.31"],["CARDAMOM SEEDS EO","1%","10","700","7"],["BENZYL BENZOATE","1.25%","12.5","8","0.1"],["AMBRETTOLIDE","1%","10","165","1.65"],["LINALYL ACETATE","2%","20","10","0.2"],["LINALOOL","1.4%","14","20","0.28"],["LABDAMATE","0.9%","9","24","0.22"],["NYMPHEAL","0.9%","9","192","1.73"],["ETHYL MALTOL","0.5%","5","27","0.14"],["LABDANUM ABSOLUTE","1.5%","15","500","7.5"],["MAPLE LACTONE (10%)","1.2%","12","109","0.13"],["PHENYL ACETIC ACID (10%)","1.3%","13","15","0.02"],["MANZANATE","0.9%","9","18","0.16"],["VERTOFIX COEUR","0.7%","7","100","0.7"],["ALMOND PYRAZINE (1%)","1%","10","473","0.05"],["ROSE DAMASCENA EO (1%)","10%","100","9500","9.5"],["SAFRANAL (10%)","0.006%","0.6","200","0.001"],["CINNAMON BARK CEYLON EO","0.1%","1","300","0.3"],["LIMONENE","1.5%","15","5","0.08"],["CIS-3-HEXENYL ACETATE","0.8%","8","40","0.32"],["TRIPLAL","0.5%","5","10","0.05"],["INDOLE","0.3%","3","30","0.09"],["GERANIOL EXTRA","2%","20","23","0.46"],["GERANYL ACETATE EXTRA","1.5%","15","43","0.65"],["AMBROXAN","1.5%","15","600","9"]];
+document.getElementById('rows').innerHTML=D.map(function(r){return '<tr'+(r[0].indexOf('ROSE DAMASCENA')===0?' class="k"':'')+'><td>'+r[0]+'</td><td>'+r[1]+'</td><td>'+r[2]+'</td><td>'+r[3]+'</td><td>'+r[4]+'</td></tr>'}).join('');
+
+const P={
+ top:{t:'The Equinox Ice',c:'#9CC3DB',b:'rgba(156,195,219,.6)',s:'rgba(156,195,219,.25)',n:'Top notes',m:'Cis-3-Hexenyl Acetate · Triplal · Yellow Mandarin · Bergamot · Petitgrain · Cardamom Seeds',d:'Green, wet and bright, with a splinter of citrus sun. The first minutes, before the day warms up: meltwater on a branch and the cold that already smells of leaves.'},
+ mid:{t:'The Grand Xonça',c:'#E0485F',b:'rgba(224,72,95,.7)',s:'rgba(224,72,95,.3)',n:'Heart notes',m:'Lecheq Rose with Rose Givco and PEA · Osmanthus Absolute · Beeswax · Phenylacetic Acid · Orange Flower · Saffron',d:'The tray laid out in full, with the rose at its centre. Velvet apricot from osmanthus, a honeyed warmth from wax, and saffron threading through it all.'},
+ base:{t:'The Embers of Çərşənbə',c:'#F0A92E',b:'rgba(240,169,46,.7)',s:'rgba(240,169,46,.3)',n:'Base notes',m:'Whiskey Pentanol · Labdanum Absolute · Benzoin Siam · Sweet Smoke · Armenian Wood · Ambroxan · Timbersilk',d:'The bonfire gone low and golden: a glow rather than a flame, still warm hours later. Amber, resin and a thread of smoke hold the rose on the skin.'}
+};
+const tiers=Array.prototype.slice.call(document.querySelectorAll('.tier')),panel=document.getElementById('panel'),pc=document.getElementById('pc');
+function show(k){
+  var o=P[k];
+  tiers.forEach(function(t){var on=t.getAttribute('data-k')===k;t.classList.toggle('on',on);t.setAttribute('aria-selected',on)});
+  panel.style.borderColor=o.b;panel.style.boxShadow='0 0 30px '+o.s;
+  pc.className='';void pc.offsetWidth;pc.className='in2';
+  pc.innerHTML='<h3 style="color:'+o.c+'">'+o.t+'</h3><p class="n" style="color:'+o.c+'">'+o.n+'</p><p style="color:#E6F0F7;margin-bottom:.9rem">'+o.m+'</p><p>'+o.d+'</p>';
+}
+tiers.forEach(function(t){
+  t.addEventListener('click',function(){show(t.getAttribute('data-k'))});
+  t.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(t.getAttribute('data-k'))}});
+});
+show('top');
+
+/* festive background: frost drops fall, embers rise, rose petals and gold sparks drift (optimised for Safari / iOS) */
+(function(){
+  var cv=document.getElementById('fx'),cx=cv.getContext('2d'),W=0,H=0,wind=0,PT=[],BU=[],last=0,id=0,n;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function rs(){var w=window.innerWidth,h=window.innerHeight;if(w===W&&Math.abs(h-H)<120)return;W=cv.width=w;H=cv.height=h}
+  rs();window.addEventListener('resize',rs);
+  window.addEventListener('mousemove',function(e){wind=(e.clientX/W-.5)*1.4});
+  var g=document.getElementById('grass');
+  for(n=0;n<70;n++){var b=document.createElement('i');b.style.height=(25+Math.random()*75)+'%';b.style.animationDelay=(.6+Math.random()*2.4)+'s';g.appendChild(b)}
+  var small=W<700;
+  function mk(t){return{t:t,x:Math.random()*W,y:Math.random()*H,r:Math.random()*2.4+.8,v:Math.random()*.7+.3,s:Math.random()*6.28,k:Math.random(),a:Math.random()*6.28}}
+  for(n=0;n<(small?40:80);n++)PT.push(mk('d'));
+  for(n=0;n<(small?14:26);n++)PT.push(mk('p'));
+  for(n=0;n<(small?22:44);n++)PT.push(mk('s'));
+  var PC=['rgba(224,72,95,.6)','rgba(190,20,60,.55)','rgba(246,150,170,.5)','rgba(240,169,46,.5)'];
+  function burst(x,y){for(var i=0;i<(small?30:46);i++){var a=Math.random()*6.283,sp=2+Math.random()*5,r=Math.random();BU.push({x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-2,l:1,r:1+Math.random()*2.2,c:r<.45?'255,200,90':r<.75?'224,72,95':'63,203,92'})}}
+  window.addEventListener('click',function(e){burst(e.clientX,e.clientY)});
+  function frame(t){
+    id=window.requestAnimationFrame(frame);
+    if(t-last<33)return;last=t;
+    var f=window.pageYOffset/Math.max(1,document.documentElement.scrollHeight-H),i;
+    cx.clearRect(0,0,W,H);
+    for(i=0;i<PT.length;i++){
+      var p=PT[i];
+      p.s+=.012;p.a+=.02;
+      p.x+=Math.sin(p.s)*.5+wind*(p.t==='d'?.6:1.2);
+      if(p.t==='d'){
+        var up=f>.62||(f>.3&&p.k>.5);
+        p.y+=up?-p.v*1.2:p.v;
+        cx.beginPath();cx.arc(p.x,p.y,p.r*2.6,0,6.283);
+        cx.fillStyle=up?'rgba(240,169,46,.12)':'rgba(156,195,219,.14)';cx.fill();
+        cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);
+        cx.fillStyle=up?'rgba(240,'+(120+p.k*70|0)+',40,'+(.5+p.k*.4)+')':'rgba(225,240,252,'+(.35+p.k*.4)+')';cx.fill();
+      }else if(p.t==='p'){
+        p.y+=p.v*.8;
+        cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.scale(1,.55+Math.abs(Math.sin(p.a))*.45);
+        cx.beginPath();cx.ellipse(0,0,p.r*3.2,p.r*1.8,0,0,6.283);cx.fillStyle=PC[(p.k*4)|0];cx.fill();cx.restore();
+      }else{
+        p.y+=p.v*.55;
+        cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);
+        cx.fillStyle='rgba(255,'+(200+p.k*40|0)+',100,'+(.35+.5*Math.abs(Math.sin(p.a*1.5)))+')';
+        cx.fillRect(-p.r,-p.r*.5,p.r*2.2,p.r);cx.restore();
+      }
+      if(p.t==='d'&&p.y<-8)p.y=H+8;
+      if(p.y>H+10)p.y=-10;
+      if(p.x>W+20)p.x=-20;if(p.x<-20)p.x=W+20;
+    }
+    for(i=BU.length-1;i>=0;i--){var q=BU[i];q.x+=q.vx;q.y+=q.vy;q.vy+=.12;q.vx*=.985;q.l-=.014;if(q.l<=0){BU.splice(i,1);continue}
+      cx.beginPath();cx.arc(q.x,q.y,q.r*2.4,0,6.283);cx.fillStyle='rgba('+q.c+','+(q.l*.18)+')';cx.fill();
+      cx.beginPath();cx.arc(q.x,q.y,q.r,0,6.283);cx.fillStyle='rgba('+q.c+','+q.l+')';cx.fill()}
+  }
+  if(!reduce){
+    id=window.requestAnimationFrame(frame);
+    document.addEventListener('visibilitychange',function(){window.cancelAnimationFrame(id);if(!document.hidden)id=window.requestAnimationFrame(frame)});
+    window.setTimeout(function(){burst(W/2,H*.42)},900);
+  }
+  /* colour drops under each mood-board card */
+  var DC=[['#9CC3DB','#E6F0F7','#3FCB5C'],['#E0485F','#8E0B25','#D8A24A'],['#B26B35','#F0A92E','#4A0614'],['#D8A24A','#F0A92E','#B26B35'],['#3FCB5C','#E6F0F7','#D8A24A'],['#E0485F','#D8A24A','#8E0B25']];
+  var tx=document.querySelectorAll('.mb .card .txt');
+  for(n=0;n<DC.length&&n<tx.length;n++){var d=document.createElement('div');d.className='drop-grid';d.innerHTML=DC[n].map(function(c){return '<span class="drop" style="background:'+c+'"></span>'}).join('');tx[n].appendChild(d)}
+})();
+</script>
+</body>
+</html>
